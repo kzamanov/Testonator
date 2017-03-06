@@ -15,6 +15,8 @@
 		6BC7AC001E62E62C007107F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BC7ABFE1E62E62C007107F5 /* LaunchScreen.storyboard */; };
 		6BC7AC0B1E62E62C007107F5 /* TestonatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7AC0A1E62E62C007107F5 /* TestonatorTests.swift */; };
 		6BC7AC161E62E62C007107F5 /* TestonatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7AC151E62E62C007107F5 /* TestonatorUITests.swift */; };
+		6BC7AC2F1E6D58A1007107F5 /* animals.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6BC7AC2E1E6D58A1007107F5 /* animals.plist */; };
+		6BC7AC311E6D5CFE007107F5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7AC301E6D5CFE007107F5 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		6BC7AC111E62E62C007107F5 /* TestonatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestonatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BC7AC151E62E62C007107F5 /* TestonatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestonatorUITests.swift; sourceTree = "<group>"; };
 		6BC7AC171E62E62C007107F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BC7AC2E1E6D58A1007107F5 /* animals.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = animals.plist; sourceTree = "<group>"; };
+		6BC7AC301E6D5CFE007107F5 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				6BC7ABFC1E62E62C007107F5 /* Assets.xcassets */,
 				6BC7ABFE1E62E62C007107F5 /* LaunchScreen.storyboard */,
 				6BC7AC011E62E62C007107F5 /* Info.plist */,
+				6BC7AC2E1E6D58A1007107F5 /* animals.plist */,
+				6BC7AC301E6D5CFE007107F5 /* DetailViewController.swift */,
 			);
 			path = Testonator;
 			sourceTree = "<group>";
@@ -238,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BC7AC2F1E6D58A1007107F5 /* animals.plist in Resources */,
 				6BC7AC001E62E62C007107F5 /* LaunchScreen.storyboard in Resources */,
 				6BC7ABFD1E62E62C007107F5 /* Assets.xcassets in Resources */,
 				6BC7ABFB1E62E62C007107F5 /* Main.storyboard in Resources */,
@@ -268,6 +275,7 @@
 				6BC7ABF81E62E62C007107F5 /* SecondViewController.swift in Sources */,
 				6BC7ABF41E62E62C007107F5 /* AppDelegate.swift in Sources */,
 				6BC7ABF61E62E62C007107F5 /* FirstViewController.swift in Sources */,
+				6BC7AC311E6D5CFE007107F5 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +526,7 @@
 				6BC7AC1C1E62E62C007107F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6BC7AC1D1E62E62C007107F5 /* Build configuration list for PBXNativeTarget "TestonatorTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +535,7 @@
 				6BC7AC1F1E62E62C007107F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6BC7AC201E62E62C007107F5 /* Build configuration list for PBXNativeTarget "TestonatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +544,7 @@
 				6BC7AC221E62E62C007107F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

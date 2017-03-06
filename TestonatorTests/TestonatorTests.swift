@@ -33,4 +33,13 @@ class TestonatorTests: XCTestCase {
         }
     }
     
+    func testAnimalNames() {
+        let names = NSArray(contentsOfFile: Bundle.main.path(forResource: "animals", ofType: "plist")!) as! [String]
+        
+        for name in names {
+            let image = UIImage(named: name)
+            print(name)
+            XCTAssertNotNil(image)
+        }
+    }
 }
