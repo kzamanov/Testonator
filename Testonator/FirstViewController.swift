@@ -25,12 +25,11 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        print("Warning")
     }
 
     //MARK: Tableview methods
@@ -49,9 +48,18 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         if (segue.identifier == "showDetails") {
             let destination = segue.destination as! DetailViewController
             let index = tableView.indexPath(for: sender as! UITableViewCell)?.last!
-            let animalName  = animals[index!]
+            let animalName  = animals[index! + 1]
             destination.image = UIImage(named: animalName)
         }
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == UITableViewCellEditingStyle.delete) {
+            
+        }
+    }
 }
-
