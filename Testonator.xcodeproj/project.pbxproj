@@ -17,6 +17,11 @@
 		6BC7AC161E62E62C007107F5 /* TestonatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7AC151E62E62C007107F5 /* TestonatorUITests.swift */; };
 		6BC7AC2F1E6D58A1007107F5 /* animals.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6BC7AC2E1E6D58A1007107F5 /* animals.plist */; };
 		6BC7AC311E6D5CFE007107F5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7AC301E6D5CFE007107F5 /* DetailViewController.swift */; };
+		6BC7AC411E700912007107F5 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7AC3F1E700912007107F5 /* Model.xcdatamodeld */; };
+		6BC7AC481E700A42007107F5 /* MyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7AC471E700A42007107F5 /* MyItem.swift */; };
+		6BC7AC4B1E700A65007107F5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC7AC4A1E700A65007107F5 /* CoreData.framework */; };
+		6BC7AC571E708522007107F5 /* names.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6BC7AC561E708522007107F5 /* names.plist */; };
+		6BC7AC591E708570007107F5 /* PlistParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7AC581E708570007107F5 /* PlistParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		6BC7AC171E62E62C007107F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BC7AC2E1E6D58A1007107F5 /* animals.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = animals.plist; sourceTree = "<group>"; };
 		6BC7AC301E6D5CFE007107F5 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		6BC7AC401E700912007107F5 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		6BC7AC471E700A42007107F5 /* MyItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyItem.swift; sourceTree = "<group>"; };
+		6BC7AC4A1E700A65007107F5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6BC7AC561E708522007107F5 /* names.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = names.plist; sourceTree = "<group>"; };
+		6BC7AC581E708570007107F5 /* PlistParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BC7AC4B1E700A65007107F5 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,10 +94,12 @@
 		6BC7ABE71E62E62C007107F5 = {
 			isa = PBXGroup;
 			children = (
+				6BC7AC3F1E700912007107F5 /* Model.xcdatamodeld */,
 				6BC7ABF21E62E62C007107F5 /* Testonator */,
 				6BC7AC091E62E62C007107F5 /* TestonatorTests */,
 				6BC7AC141E62E62C007107F5 /* TestonatorUITests */,
 				6BC7ABF11E62E62C007107F5 /* Products */,
+				6BC7AC491E700A65007107F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,15 +116,18 @@
 		6BC7ABF21E62E62C007107F5 /* Testonator */ = {
 			isa = PBXGroup;
 			children = (
+				6BC7AC461E70096D007107F5 /* Model Classes */,
 				6BC7ABF31E62E62C007107F5 /* AppDelegate.swift */,
 				6BC7ABF51E62E62C007107F5 /* FirstViewController.swift */,
 				6BC7ABF71E62E62C007107F5 /* SecondViewController.swift */,
+				6BC7AC301E6D5CFE007107F5 /* DetailViewController.swift */,
 				6BC7ABF91E62E62C007107F5 /* Main.storyboard */,
 				6BC7ABFC1E62E62C007107F5 /* Assets.xcassets */,
 				6BC7ABFE1E62E62C007107F5 /* LaunchScreen.storyboard */,
 				6BC7AC011E62E62C007107F5 /* Info.plist */,
 				6BC7AC2E1E6D58A1007107F5 /* animals.plist */,
-				6BC7AC301E6D5CFE007107F5 /* DetailViewController.swift */,
+				6BC7AC561E708522007107F5 /* names.plist */,
+				6BC7AC581E708570007107F5 /* PlistParser.swift */,
 			);
 			path = Testonator;
 			sourceTree = "<group>";
@@ -132,6 +148,22 @@
 				6BC7AC171E62E62C007107F5 /* Info.plist */,
 			);
 			path = TestonatorUITests;
+			sourceTree = "<group>";
+		};
+		6BC7AC461E70096D007107F5 /* Model Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6BC7AC471E700A42007107F5 /* MyItem.swift */,
+			);
+			name = "Model Classes";
+			sourceTree = "<group>";
+		};
+		6BC7AC491E700A65007107F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BC7AC4A1E700A65007107F5 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BC7AC571E708522007107F5 /* names.plist in Resources */,
 				6BC7AC2F1E6D58A1007107F5 /* animals.plist in Resources */,
 				6BC7AC001E62E62C007107F5 /* LaunchScreen.storyboard in Resources */,
 				6BC7ABFD1E62E62C007107F5 /* Assets.xcassets in Resources */,
@@ -272,9 +305,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BC7AC591E708570007107F5 /* PlistParser.swift in Sources */,
 				6BC7ABF81E62E62C007107F5 /* SecondViewController.swift in Sources */,
 				6BC7ABF41E62E62C007107F5 /* AppDelegate.swift in Sources */,
+				6BC7AC411E700912007107F5 /* Model.xcdatamodeld in Sources */,
 				6BC7ABF61E62E62C007107F5 /* FirstViewController.swift in Sources */,
+				6BC7AC481E700A42007107F5 /* MyItem.swift in Sources */,
 				6BC7AC311E6D5CFE007107F5 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -547,6 +583,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6BC7AC3F1E700912007107F5 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6BC7AC401E700912007107F5 /* Model.xcdatamodel */,
+			);
+			currentVersion = 6BC7AC401E700912007107F5 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = Testonator/Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6BC7ABE81E62E62C007107F5 /* Project object */;
 }
