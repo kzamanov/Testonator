@@ -6,6 +6,16 @@
 	<dict>
 		<key>TestonatorTests</key>
 		<dict>
+			<key>testMeasurePerformance()</key>
+			<dict>
+				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
+				<dict>
+					<key>baselineAverage</key>
+					<real>0.4031</real>
+					<key>baselineIntegrationDisplayName</key>
+					<string>Mar 9, 2017, 11:57:25</string>
+				</dict>
+			</dict>
 			<key>testPerformanceOfJsonRead()</key>
 			<dict>
 				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>

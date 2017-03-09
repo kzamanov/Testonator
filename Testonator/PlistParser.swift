@@ -10,18 +10,15 @@ import Foundation
 
 class PlistParser {
     
-    class func parseTestPlist() -> [String] {
+    class func parseTestPlist() {
         let path = Bundle.main.path(forResource: "names", ofType: "plist")
         
         if let _ = path {
             let array = NSArray(contentsOfFile: path!) as! [String]
             
             for _ in 0..<array.count {
-                sleep(1)
+                usleep(500000)
             }
-            return array
         }
-
-        return []
     }
 }
