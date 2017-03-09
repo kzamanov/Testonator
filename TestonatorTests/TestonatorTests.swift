@@ -29,9 +29,6 @@ class TestonatorTests: XCTestCase {
     
     func testObjectCreation() {
         let animals:[Animal] = TestAnimalCreator.createTestAnimals()
-        for animal in animals {
-            XCTAssertNotNil(animal)
-        }
         
         // Test images
         for a in animals {

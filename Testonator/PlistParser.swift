@@ -17,7 +17,7 @@ class PlistParser {
             let array = NSArray(contentsOfFile: path!) as! [String]
             
             for _ in 0..<array.count {
-                usleep(500000)
+                usleep(100000)
             }
         }
     }
